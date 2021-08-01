@@ -1,1 +1,2 @@
--Dmicronaut.environments=local
+Example Micronaut project
+`-Dmicronaut.environments=local`

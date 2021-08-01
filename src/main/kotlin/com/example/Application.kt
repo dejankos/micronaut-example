@@ -2,18 +2,15 @@ package com.example
 
 import io.micronaut.runtime.Micronaut.build
 
+
+private val log = logger("main")
+
 fun main(args: Array<String>) {
-    val ctx = build()
+    build()
             .args(*args)
             .packages("com.example")
-            .start()
-
-    val env = if (ctx.environment.activeNames.isEmpty()) {
-        setOf("default")
-    } else {
-        ctx.environment.activeNames
-    }
-
-    println("Running with env = $env")
+            .start().also {
+                log.info("Running with env = ${it.environment.activeNames}")
+            }
 }
 
