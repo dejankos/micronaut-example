@@ -9,7 +9,7 @@ import javax.inject.Inject
 
 @MicronautTest
 class UserControllerTest(
-        @Inject private val userClient: UserClient
+    @Inject private val userClient: UserClient
 ) {
 
     @Test

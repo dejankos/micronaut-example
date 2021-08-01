@@ -4,7 +4,7 @@ import javax.inject.Singleton
 
 @Singleton
 class UserService(
-        private val userRepository: UserRepository
+    private val userRepository: UserRepository
 ) {
 
     fun save(user: UserDTO) = userRepository.save(user.toEntity()).toDto()

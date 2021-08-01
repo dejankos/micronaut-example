@@ -1,1 +1,3 @@
-insert into users(name) values ('paro'), ('muz');
+insert into users(name)
+values ('paro'),
+       ('muz');

@@ -6,7 +6,7 @@ import io.micronaut.http.annotation.Post
 
 @Controller("/users")
 class UserController(
-        private val userService: UserService
+    private val userService: UserService
 ) {
 
     @Post

@@ -6,8 +6,8 @@ import io.micronaut.data.annotation.MappedEntity
 
 @MappedEntity(value = "users")
 data class User(
-        @field:Id
-        @GeneratedValue(GeneratedValue.Type.AUTO)
-        var id: Long?,
-        val name: String
+    @field:Id
+    @GeneratedValue(GeneratedValue.Type.AUTO)
+    var id: Long?,
+    val name: String
 )
